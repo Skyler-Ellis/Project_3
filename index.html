@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project_3</title>
+</head>
+<body>
+    <header><h1>The Lamias' Den</h1>
+    <h4>Knoxville Community</h4></header>
+    <h2>Welcome</h2>
+    <p>We are a café that takes pride in being a not-for-profit organization. Our main focus is to support and nurture our local community in every possible way.</p>
+    <br>
+    <br>
+    <p>ABOUT US: Established in 2023 by Skyler Ellis, our mission is to bring together people from various backgrounds using our café to enhance our community and promote meaningful connections.</p>
+    <br>
+
+    <section class="blue container">
+        <h2>
+        OUR SERVICES
+        </h2>
+        <article class="card">
+        <div class="icons">&#9749;</div>
+        <h3>Drink Delivery</h3>
+        <p> We offer bulk delivery within the Knoxville area. Please note that a minimum order of 100 units and a maximum order of 1,000 units apply. To ensure timely delivery, we kindly request a full business day notice in advance. </p>
+        <button>Learn More</button>
+        </article>
+        <article class="card">
+        <div class="icons">&#129346;</div>
+        <h3>Event Catering </h3>
+        <p> Exciting news! We now provide catering in Knoxville. Please note: minimum order of 10, maximum of 100. To ensure timely delivery, kindly give us at least one business day notice. Thank you! </p>
+        <button>Learn More</button>
+        </article>
+     </section>
+
+    <section class="team container">
+        <h2>
+        OUR TEAM
+        </h2>
+        <article class="card">
+        <div class="icons">&#128102;</div>
+        <h3>Skyler Ellis</h3>
+        <p>Skyler Ellis has an incredible array of credentials, boasting certification as a Working Pastry Chef, Sous Chef, and even a Mixology Degree under their belt.</p>
+        
+        </article>
+        <article class="card">
+        <div class="icons">&#129493;</div>
+        <h3>Lily Esfandiari</h3>
+        <p>Lily Esfandiari holds an array of impressive credentials in the field of pastry arts, including being a Certified Fundamentals Pastry Cook, Certified Pastry Culinarian, Certified Working Pastry Chef, Certified Executive Pastry Chef, and Certified Master Pastry Chef.</p>
+        
+        </article>
+    </section>
+
+    <section class="blue container">
+        <h2>
+        OUR CLASSES
+        </h2>
+        <article class="card">
+        <div class="icons">&#127865;</div>
+        <h3>Mixology Training</h3>
+        <p> Weekly Hour Class Every Thursday</p>
+        <button>Learn More</button>
+        </article>
+        <article class="card">
+        <div class="icons">&#129368;</div>
+        <h3>Cooking Classes</h3>
+        <p>Biweekly Classes Tuesday and Thursday</p>
+        <button>Learn More</button>
+        </article>
+     </section>
+
+    <section class="blue container">
+        <h2>
+        Community Work
+        </h2>
+        <article class="card">
+        <div class="icons">&#127817;</div>
+        <h3>Food Pantry</h3>
+        <p>We happily provide food and toiletries to everyone who needs them. Donations are always welcome and greatly appreciated.  </p>
+        <button>Learn More</button>
+        </article>
+        <article class="card">
+        <div class="icons">&#128226;</div>
+        <h3>Volunteer </h3>
+        <p> We greatly appreciate anyone who is willing to lend a hand with community outreach!</p>
+        <button>Learn More</button>
+        </article>
+     </section>
+
+    <section class="blue container">
+        <h2>
+        Careers
+        </h2>
+        <article class="card">
+        <div class="icons">&#9749;</div>
+        <h3>Baristas and Mixologists</h3>
+        <p>We offer part-time and full-time roles for Baristas and Mixologists. Enjoy profit sharing and generous, unquestioned paid time off. </p>
+        <button>Learn More</button>
+        </article>
+        <article class="card">
+        <div class="icons">&#127856;</div>
+        <h3>Culinary professionals and Cake Artists</h3>
+        <p> Looking for individuals with culinary and cake decorating experience. Full-time and part-time positions available. We offer profit sharing and PTO without any restrictions.</p>
+        <button>Learn More</button>
+        </article>
+     </section>
+
+    <section>
+        <h2>MY ORDER FORM:</h2>
+        <form id="my-form" >
+        <table>
+            <tr>
+            <td> Name: </td>
+            <td><input type="text" size="25" name="my-name"></td>
+            </tr>
+            
+            <tr>
+            <td> Address: </td>
+            <td><input type="text" size="25"
+            name="my-address"></td>
+            </tr>
+
+            <tr>
+            <td> Favourite drink: </td>
+            <td>
+                <select name="my-drink">
+                    <option> Bubble Tea </option>
+                    <option> Latte </option>
+                    <option> Tea of the Day</option>
+                </select>
+             </td>
+            </tr>
+                
+            <tr>
+            <td> Quantity: </td>
+            <td>
+                <input type="number" name="my-qty"
+                value="1" min="1" max="5">
+                <small>(max 5)</small>
+             </td>
+            </tr>
+
+            <tr>
+            <br>
+            </tr>
+
+            <tr>
+                <td colspan="2" >
+                    
+                    <input class="button"
+                    type="button"
+                    value="Process Order"
+                    onclick="placeOrder();" >
+                    
+                    <input class="button"
+                    type="reset" value="Clear" onclick="document.getElementById('my-order').style.display = 'none'"; >
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="my-order">
+        </div>
+        </form>
+    </section>
+
+    <footer>
+    <div>
+        <h3>Thanks for visiting.</h3>
+        <div class="container">
+            <article class="card">
+                <h3>Get In Touch</h3>
+                <p>Probably the best
+                    place to buy cakes in all
+                    of Knoxville.</p>
+            </article>
+            <article class="card">
+              <p>We would love to hear from you.
+                <br> Call or email us. <br>
+                Mobile: 072345 633 //
+                Tel: 012 343 3432 <br> TheLamiasDen@gmail.com</p>  
+            </article>
+        </div>
+
+    <div class="circle">F</div>
+    <div class="circle">T</div>
+    <div class="circle">I</div>
+
+        &copy;2023 The Lamias' Den
+    </div>
+    </footer>
+    <script>
+        function placeOrder () {
+            var orderForm = document.getElementById("my-form");
+            results = "<h3>Success!</h3> Here is your order.";
+            results += "<br>Name: " + orderForm.elements["my-name"].value;
+            results += "<br>Address: " + orderForm.elements["my-address"].value;
+            results += "<br>I like to order: " + orderForm.elements["my-drink"].value;
+            results += "<br>Quantity: " + orderForm.elements["my-qty"].value;
+            var orderResults = document.getElementById("my-order");
+            orderResults.style.display = "block";
+            orderResults.innerHTML = results;
+        }
+    </script>
+        
+</body>
+</html>
